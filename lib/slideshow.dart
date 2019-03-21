@@ -43,7 +43,7 @@ class _SlideshowState extends State<Slideshow> {
     });
   }
 
-  _buildTagPage() {
+  Container _buildTagPage() {
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -62,7 +62,7 @@ class _SlideshowState extends State<Slideshow> {
     );
   }
 
-  _buildButton(tag) {
+  FlatButton _buildButton(tag) {
     Color color = tag == activeTag ? Colors.blue : Colors.white;
     return FlatButton(
       color: color,
